@@ -1,0 +1,53 @@
+@model SrbComercialAdmin.Models.Product
+
+
+
+<div class="form-container">
+    <h2>Criar Novo Produto</h2>
+
+    <form asp-action="Create" method="post">
+        <div class="form-group">
+            <label asp-for="Ean"></label>
+            <input asp-for="Ean" class="form-control" />
+            <span asp-validation-for="Ean" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Description"></label>
+            <textarea asp-for="Description" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Price"></label>
+            <input asp-for="Price" class="form-control" type="number" step="0.01" />
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Quantity"></label>
+            <input asp-for="Quantity" class="form-control" type="number" />
+            <span asp-validation-for="Quantity" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="ImageUrl"></label>
+            <input asp-for="ImageUrl" class="form-control" type="url" />
+            <span asp-validation-for="ImageUrl" class="text-danger"></span>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn-submit">Cadastrar</button>
+            <button type="button" class="btn-cancel" onclick="window.location.href='@Url.Action("Index", "Product")'">Voltar</button>
+
+        </div>
+
+       
+    </form>
+</div>

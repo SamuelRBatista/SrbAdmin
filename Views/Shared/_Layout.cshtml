@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - SrbComercialAdmin</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SrbComercialAdmin.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>       
+            <div class="navigation">
+                <ul>
+                    <li>
+                    <a>
+                            <span class="icon">
+                                <ion-icon name="logo-"></ion-icon>
+                            </span>
+                            <span class="title">Srb-Comercial</span>
+                        </a>
+                    </li>                  
+
+                    <li>
+                    <a asp-area="" asp-controller="" asp-action="">
+                            <span class="icon">
+                                <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                            <span class="title">Dashboard</span>
+                        </a>
+                    </li>
+
+                    <li>
+                    <a  asp-area="" asp-controller="Product" asp-action="Index">
+                            <span class="icon">
+                                <ion-icon name="logo-product"></ion-icon>
+                            </span>
+                            <span class="title">Produtos</span>
+                        </a>
+                    </li>
+
+                    <li>
+                    <a asp-area="" asp-controller="" asp-action="">
+                            <span class="icon">
+                                <ion-icon name="people-outline"></ion-icon>
+                            </span>
+                            <span class="title">Clientes</span>
+                        </a>
+                    </li>
+
+                    <li>
+                    <a asp-area="" asp-controller="" asp-action="">
+                            <span class="icon">
+                                <ion-icon name="chatbubble-outline"></ion-icon>
+                            </span>
+                            <span class="title">Fornecedor</span>
+                        </a>
+                    </li>
+
+                    <li>
+                    <a asp-area="" asp-controller="" asp-action="">
+                            <span class="icon">
+                                <ion-icon name="help-outline"></ion-icon>
+                            </span>
+                            <span class="title">Ajuda</span>
+                        </a>
+                    </li>
+
+                    <li>
+                    <a asp-area="" asp-controller="" asp-action="">
+                            <span class="icon">
+                                <ion-icon name="settings-outline"></ion-icon>
+                            </span>
+                            <span class="title">Configurações</span>
+                        </a>
+                    </li>
+
+                    <li>
+                    <a asp-area="" asp-controller="" asp-action="">
+                            <span class="icon">
+                                <ion-icon name="lock-closed-outline"></ion-icon>
+                            </span>
+                            <span class="title">Senhas</span>
+                        </a>
+                    </li>
+
+                    <li>
+                    <a asp-area="" asp-controller="" asp-action="">
+                            <span class="icon">
+                                <ion-icon name="log-out-outline"></ion-icon>
+                            </span>
+                            <span class="title">Sign Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+          
+    </header>
+    <div class="container">
+        <main role="main" class="pb-4">
+            @RenderBody()
+        </main>
+    </div>
+
+@*     <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - SrbComercialAdmin - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer> *@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/main.js" asp-append-version="true"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
