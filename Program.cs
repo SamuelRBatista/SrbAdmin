@@ -1,10 +1,14 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using SrbComercialAdmin.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Adicione os serviços necessários
+builder.Services.AddHttpClient<CategoryService>(); // Registro do CategoryService
+builder.Services.AddHttpClient<ProductService>();  // Registro do ProductService
 builder.Services.AddControllersWithViews();
+
+
 
 // Adicione o HttpClient
 builder.Services.AddHttpClient();
