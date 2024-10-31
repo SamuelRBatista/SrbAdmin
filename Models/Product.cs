@@ -1,25 +1,33 @@
-using System.Text.Json.Serialization;
+using System.ComponentModel.DataAnnotations;
 
-namespace SrbComercialAdmin.Models;
-public class Product
+namespace SrbComercialAdmin.Models
 {
-    public int Id { get; set; }
+    public class Product
+    {
+        public int Id { get; set; }
 
-    [JsonPropertyName("ean")]
-    public string Ean { get; set; }
+        [Required]
+        public string Ean { get; set; }
 
-    [JsonPropertyName("name")]
-    public string Name { get; set; }
+        public string Name { get; set; }
 
-    [JsonPropertyName("description")]
-    public string Description { get; set; }
+        public string Description { get; set; }
 
-    [JsonPropertyName("price")]
-    public decimal Price { get; set; }
+        [Range(0, double.MaxValue, ErrorMessage = "O preço deve ser positivo")]
+        public decimal Price { get; set; }
 
-    [JsonPropertyName("quantity")]
-    public int Quantity { get; set; }
+        [Range(0, int.MaxValue, ErrorMessage = "A quantidade deve ser positiva")]
+        public int Quantity { get; set; }
 
-    [JsonPropertyName("image_Url")]
-    public string ImageUrl { get; set; }
+        [Url(ErrorMessage = "A URL da imagem deve ser válida")]
+        public string Image_Url { get; set; }
+
+        [Required]
+        [Display(Name = "Categoria")]
+        public int CategoryId { get; set; }  // Este campo armazenará o ID da categoria selecionada
+
+        // Opção para carregar categorias na view
+        // Para preencher a lista de categorias no formulário
+    }
+    
 }
