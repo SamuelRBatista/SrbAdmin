@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SrbComercialAdmin")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09fc3cede2bbf148e4ea65b53281c6292995f326")]
 [assembly: System.Reflection.AssemblyProductAttribute("SrbComercialAdmin")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SrbComercialAdmin")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -40,6 +40,7 @@ C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\2-PainelAdmin\SrbComercialA
 C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\2-PainelAdmin\SrbComercialAdmin\obj\Debug\net8.0\SrbComercialAdmin.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\2-PainelAdmin\SrbComercialAdmin\obj\Debug\net8.0\SrbComercialAdmin.RazorAssemblyInfo.cache
 C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\2-PainelAdmin\SrbComercialAdmin\obj\Debug\net8.0\SrbComercialAdmin.RazorAssemblyInfo.cs
+C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\2-PainelAdmin\SrbComercialAdmin\obj\Debug\net8.0\SrbComercialAdmin.sourcelink.json
 C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\2-PainelAdmin\SrbComercialAdmin\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\2-PainelAdmin\SrbComercialAdmin\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\2-PainelAdmin\SrbComercialAdmin\obj\Debug\net8.0\staticwebassets\msbuild.SrbComercialAdmin.Microsoft.AspNetCore.StaticWebAssets.props
