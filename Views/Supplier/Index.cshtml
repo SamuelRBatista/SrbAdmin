@@ -1,0 +1,54 @@
+﻿@model IEnumerable<SrbComercialAdmin.Models.Supplier>
+
+<div class="details">
+    <div class="recentOrders">
+        <div class="cardHeader">
+            <h2>Fornecedor</h2>
+            <a asp-controller="Supplier" asp-action="Create" class="btn">Cadastrar</a>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                   
+                    <td>Nome</td>
+                    <td>Email</td>
+                    <td>Telefone</td>
+                    <td>Cep</td>
+                    <td>Address</td>
+                    <td>Cidade</td>
+                    <td>Ações</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                @if (Model != null)
+                {
+                    foreach (var supplier in Model)
+                    {
+                        <tr>
+                            
+                            <td>@supplier.Name</td>
+                            <td>@supplier.Email</td>
+                            <td>@supplier.Phone</td>
+                            <td>@supplier.Cep</td>
+                            <td>@supplier.Address</td>
+                            <td>@supplier.CityId</td>                           
+                            <td>
+                                <a asp-controller="Supplier" asp-action="Edit" asp-route-id="@supplier.Id" class="btn">Editar</a>
+                                <form asp-controller="Supplier" asp-action="Delete" asp-route-id="@supplier.Id" method="post" style="display:inline;" onsubmit="return confirm('Tem certeza que deseja excluir este produto?');">
+                                    <button type="submit" class="btn btn-danger">Excluir</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="4">Nenhum Fornecedor encontrado.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
