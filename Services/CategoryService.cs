@@ -1,9 +1,4 @@
 ﻿using SrbComercialAdmin.Models;
-using System.Net.Http;
-using System.Net.Http.Json;
-using System.Threading.Tasks;
-
-
 public class CategoryService
 {
     private readonly HttpClient _httpClient;
