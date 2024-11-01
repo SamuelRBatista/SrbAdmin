@@ -5,7 +5,10 @@ using SrbComercialAdmin.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddHttpClient<CategoryService>(); // Registro do CategoryService
-builder.Services.AddHttpClient<ProductService>();  // Registro do ProductService
+builder.Services.AddHttpClient<ProductService>();
+builder.Services.AddHttpClient<ClientService>();
+builder.Services.AddHttpClient<StateService>();
+builder.Services.AddHttpClient<CityService>();
 builder.Services.AddControllersWithViews();
 
 
