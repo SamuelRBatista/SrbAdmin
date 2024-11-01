@@ -1,0 +1,52 @@
+﻿@model IEnumerable<SrbComercialAdmin.Models.Client>
+
+<div class="details">
+    <div class="recentOrders">
+        <div class="cardHeader">
+            <h2>Clientes</h2>
+            <a asp-controller="Client" asp-action="Create" class="btn">Cadastrar</a>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <td>Cnpj</td>
+                    <td>Nome</td>
+                    <td>E-mail</td>
+                    <td>Cep</td>
+                    <td>Endereço</td>
+                    <td>Cidade</td> <!-- Alterado aqui -->
+                    <td>Ações</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var client in Model)
+                    {
+                        <tr>
+                            <td>@client.Cnpj</td>
+                            <td>@client.Name</td>
+                            <td>@client.Email</td>
+                            <td>@client.Cep</td>
+                            <td>@client.Address</td>
+                            <td>@client.CityName</td> <!-- Exibir o nome da cidade -->
+                            <td>
+                                <a asp-controller="Client" asp-action="Edit" asp-route-id="@client.Id" class="btn">Editar</a>
+                                <form asp-controller="Client" asp-action="Delete" asp-route-id="@client.Id" method="post" style="display:inline;" onsubmit="return confirm('Tem certeza que deseja excluir este cliente?');">
+                                    <button type="submit" class="btn btn-danger">Excluir</button>
+                                </form>
+                            </td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="7">Nenhum cliente encontrado.</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

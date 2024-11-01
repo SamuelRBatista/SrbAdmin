@@ -1,0 +1,59 @@
+﻿@model SrbComercialAdmin.Models.Client;
+
+
+<div class="form-container">
+    <h2>Alterar Cleinte</h2>
+
+    <form asp-action="Edit" method="post">
+        <div class="form-group">
+            <label asp-for="Cnpj"></label>
+            <input asp-for="Cnpj" class="form-control" />
+            <span asp-validation-for="Cnpj" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Cep"></label>
+            <input asp-for="Cep" class="form-control" step="0.01" />
+            <span asp-validation-for="Cep" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Address"></label>
+            <input asp-for="Address" class="form-control" type="text" />
+            <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="StateId">State</label>
+            <select asp-for="StateId" asp-items="ViewBag.States" class="form-control"></select>
+            <span asp-validation-for="StateId" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="CityId">Cidade</label>
+            <select asp-for="CityId" asp-items="ViewBag.Cities" class="form-control"></select>
+            <span asp-validation-for="CityId" class="text-danger"></span>
+        </div>
+
+
+        <div class="form-actions">
+            <button type="submit" class="btn-submit">Alterar</button>
+            <button type="button" class="btn-cancel" onclick="window.location.href='@Url.Action("Index", "Client")'">Voltar</button>
+
+        </div>
+
+
+    </form>
+</div>
