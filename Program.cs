@@ -6,6 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddHttpClient<CategoryService>(); // Registro do CategoryService
 builder.Services.AddHttpClient<ProductService>();
+builder.Services.AddHttpClient<SupplierService>();
 builder.Services.AddHttpClient<ClientService>();
 builder.Services.AddHttpClient<StateService>();
 builder.Services.AddHttpClient<CityService>();
