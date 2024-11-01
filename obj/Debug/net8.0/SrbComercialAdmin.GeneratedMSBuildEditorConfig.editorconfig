@@ -18,6 +18,18 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Samuel R Batista\Desktop\1_Workspace-Dev\C#\2-PainelAdmin\SrbComercialAdmin
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Samuel R Batista/Desktop/1_Workspace-Dev/C\#/2-PainelAdmin/SrbComercialAdmin/Views/Client/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Samuel R Batista/Desktop/1_Workspace-Dev/C\#/2-PainelAdmin/SrbComercialAdmin/Views/Client/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Samuel R Batista/Desktop/1_Workspace-Dev/C\#/2-PainelAdmin/SrbComercialAdmin/Views/Client/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Samuel R Batista/Desktop/1_Workspace-Dev/C\#/2-PainelAdmin/SrbComercialAdmin/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
